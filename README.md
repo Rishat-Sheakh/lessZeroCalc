@@ -12,7 +12,9 @@ Example inputs:
 
 ## Features
 - Clean glassmorphism-inspired UI
-- Keyboard support for numbers, operators, Enter, Esc, Backspace
+- Keyboard support for numbers, operators, Enter, Esc, Backspace, and H/K/L unit keys
+- Smart result formatting: 164 stays `164`, 157000 becomes `157K`, 520000 becomes `5L 20K`, 1500000 becomes `1M 500K`
+- Toggle result display between units and digits with the display button
 - Custom unit expansion before evaluation
 - Mobile-friendly responsive layout
 

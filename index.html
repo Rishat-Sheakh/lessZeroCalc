@@ -15,7 +15,10 @@
       </div>
 
       <div class="display-shell">
-        <div class="display-top">Type numbers, or use K / H / L keys</div>
+        <div class="display-top">
+          <span>Type numbers, or use H / K / L / M from the keypad</span>
+          <button id="toggle-format" class="display-action" type="button">Show digits</button>
+        </div>
         <div id="calculator-display" class="display-value">0</div>
       </div>
 
@@ -40,15 +43,19 @@
         <button class="btn" data-value="3">3</button>
         <button class="btn operator" data-value="+">+</button>
 
-        <button class="btn unit" data-value="K">K</button>
         <button class="btn" data-value="0">0</button>
         <button class="btn" data-value=".">.</button>
         <button class="btn equals" data-action="equals">=</button>
+
+        <button class="btn unit" data-value="H">H</button>
+        <button class="btn unit" data-value="K">K</button>
+        <button class="btn unit" data-value="L">L</button>
+        <button class="btn unit" data-value="M">M</button>
       </div>
 
       <div class="hint-panel">
-        <p><strong>Unit shortcuts:</strong> <span class="hint-pill">H</span>=100, <span class="hint-pill">K</span>=1,000, <span class="hint-pill">L</span>=100,000</p>
-        <p>Examples: <span class="hint-pill">5K</span> → 5,000 · <span class="hint-pill">2L</span> → 200,000</p>
+        <p><strong>Unit shortcuts:</strong> <span class="hint-pill">H</span>=100, <span class="hint-pill">K</span>=1,000, <span class="hint-pill">L</span>=100,000, <span class="hint-pill">M</span>=1,000,000</p>
+        <p>Examples: <span class="hint-pill">5K</span> → 5,000 · <span class="hint-pill">2L</span> → 200,000 · <span class="hint-pill">1M</span> → 1,000,000</p>
       </div>
     </section>
   </main>
